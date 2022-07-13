@@ -8,34 +8,86 @@
 }
 
 :root {
- --bg-color: #000030;
+ --bg-color: #000030; /* cor de fundo da página*/
  --white: #fff;
+ --btn-bg-color: #7E80D7; /* cor de fundo dos botões*/
 }
 
 body{
  display: flex;
  flex-direction: column;
- align-items: center;
- width: 100%;
+ margin: 0 auto;
+ width: 78%;
  min-height: 100vh;
  background: var(--bg-color);
 }
 
-body .cabecalho{
- min-width: 75%;
+.cabecalho{
  height: 8rem;
  display: flex;
  justify-content: space-between;
  align-items: center;
+ margin-bottom: 7rem;
 }
-body .logo{
+.logo{
  font-size: 15pt;
  font-weight: bold;
 }
 
-header .nav_menu ul{
+.nav_menu ul{
  display: flex;
  gap: 4rem;
  list-style-type: none;
  font-size: 15pt;
+}
+
+
+.section_buy_nfts{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+.section_buy_nfts h1{
+ line-height: 6rem;
+ font-size: 4.3rem;
+ text-transform: capitalize;
+ font-family: "Outfit";
+ margin-bottom: 2rem;
+}
+.section_buy_nfts p{
+ font-size: 13pt;
+ line-height: 1.5rem;
+ margin-bottom: 3rem;
+}
+
+/* botões */
+.section_buy_nfts .buttons{
+ width: 36rem;
+}
+.section_buy_nfts button{
+ width: 17rem;
+ height: 4.5rem;
+ background-color: var(--btn-bg-color);
+ text-transform: uppercase;
+ font-size: 1.3rem;
+ font-weight: bold;
+ margin-right: .5rem;
+ border-radius: 50px;
+ border: none;
+ cursor: pointer;
+}
+.section_buy_nfts button:nth-child(2){
+ background: transparent;
+ border: 1px solid #3fb0cc;
+ text-shadow: 
+  -1px -1px 0px #3fb0cc,
+  -1px 1px 0px #3fb0cc,
+  1px -1px 0px #3fb0cc,
+  0px 1px 0px #3fb0cc;
+}
+
+.section_buy_nfts img{
+ position: relative;
+ right: 2.5rem;
+ bottom: 5rem;
 }
